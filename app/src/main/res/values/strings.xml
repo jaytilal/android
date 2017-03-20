@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Hometowns</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="state">State</string>
+    <string name="country">Country</string>
+    <string name="year">Year</string>
+    <string name="set">Set Location</string>
+    <string name="nickname">Nick Name</string>
+    <string name="password">Password</string>
+    <string name="city">City</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="submit">Submit</string>
+    <string name="addUser">Add new user</string>
+    <string name="displayList">Display List</string>
+    <string name="displayMap">Display Map</string>
+</resources>

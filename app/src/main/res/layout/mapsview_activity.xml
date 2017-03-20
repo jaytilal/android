@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="10dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="15">
+
+
+        <Spinner
+            android:id="@+id/country_filter"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:prompt="@string/country" />
+
+
+        <Spinner
+            android:id="@+id/state_filter"
+            android:layout_weight="5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:prompt="@string/state"/>
+
+        <EditText
+            android:id="@+id/year_input"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Year"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:layout_width="0dp" />
+
+
+    </LinearLayout>
+
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        tools:context=".MapsViewActivity">
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            map:uiRotateGestures="true"
+            map:uiScrollGestures="true"
+            map:uiTiltGestures="true"
+            map:uiZoomControls="true"
+            map:uiZoomGestures="true"
+            map:cameraBearing="0"
+            map:cameraTargetLat="32.772399"
+            map:cameraTargetLng="-117.072286"
+            map:cameraTilt="30"
+            map:cameraZoom="4"
+            map:mapType="normal"
+            map:uiCompass="true" />
+    </FrameLayout>
+
+</LinearLayout>
